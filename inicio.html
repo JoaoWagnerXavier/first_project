@@ -91,7 +91,7 @@ Outra linha
 <p>version1</p>
 
 <p>Para melhorar a semantica pode si dividir em seções e colocar as imagens dentro de figura.</p>
-<section id="about me">
+ 
     <figure><img src="https://avatars.githubusercontent.com/u/150099850?v=4" alt="Foto do Perfil" width="150"><figcaption>Foto do Perfil João Wagner</figcaption>
 
 </figure>
@@ -108,11 +108,12 @@ Outra linha
             <li>
                 <a href="inicio.html">home</a>
             </li>
+            <!-- target=_blank e utilizado para quando clicar no lique de uma pagina abrir nova aba com endereço novo. -->
             <li>
-                <a href="https://sso.ada.tech/?redirect_uri=http://cursos.ada.tech/curso-digital/8c9d536c-fd82-4bd9-b63c-a87abf9ebeba/modulo/0f291471-b000-4a81-bebe-f59085691efa/topico/293e8ab6-e1f0-47be-adf7-ebcb9ded6cad">Github</a>
+                <a href="https://sso.ada.tech/?redirect_uri=http://cursos.ada.tech/curso-digital/8c9d536c-fd82-4bd9-b63c-a87abf9ebeba/modulo/0f291471-b000-4a81-bebe-f59085691efa/topico/293e8ab6-e1f0-47be-adf7-ebcb9ded6cad" target="_blank">Github</a>
             </li>
             <li>
-                <a href="https://sso.ada.tech/?redirect_uri=http://cursos.ada.tech/curso-digital/8c9d536c-fd82-4bd9-b63c-a87abf9ebeba/modulo/0f291471-b000-4a81-bebe-f59085691efa/topico/293e8ab6-e1f0-47be-adf7-ebcb9ded6cad">Curso ADA</a>
+                <a href="https://sso.ada.tech/?redirect_uri=http://cursos.ada.tech/curso-digital/8c9d536c-fd82-4bd9-b63c-a87abf9ebeba/modulo/0f291471-b000-4a81-bebe-f59085691efa/topico/293e8ab6-e1f0-47be-adf7-ebcb9ded6cad" target="_blank">Curso ADA</a>
             </li>
         </ul>
     </nav>
@@ -122,26 +123,188 @@ Outra linha
 
 <main>
 
+    <h2>Tabelas</h2>
+
+<section id="amigos"> 
+<h3>tempo de amizade</h3>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Ano que conheceu</th>
+            <th>Tempo</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Jose</td>
+            <td>2000</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Camila</td>
+            <td>2010</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>2020</td>
+            <td>3</td>
+        </tr>
+
+    </tbody>
+</table>
 </section>
 
-    <section id="table">
-        <h3>tabela</h3>
-        <table></table>
+    <section id="escola">
+        <h3>horario de aula</h3>
         
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Escola</th>
+                    <th>Dia</th>
+                    <th>Turno</th>
+                    <th>Materia</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">Modesta Cravo</td>
+                    <td>segunda Feira</td>
+                    <td>Manhã</td>
+                    <td>Matematica</td>
+                </tr>
+
+                <tr>
+                    <!-- linha colocada como comentario para utilizar mesclagem -->
+                    <!-- <td>Mendes Pimentel</td> -->
+                    <td>Terça Feira</td>
+                    <td>Manhã</td>
+                    <td>Historia</td>
+                </tr>
+
+                <tr>
+                    <td>Mendes Pimentel</td>
+                    <td>Quinta Feira</td>
+                    <td>Tarde</td>
+                    <td>Artes</td>
+                </tr>
+
+                <tr>
+                    <td>Henriqueta Lisboa</td>
+                    <td>Sabado</td>
+                    <td>Integral</td>
+                    <td>Eletrônica</td>
+                </tr>
+            </tbody>
+        </table> 
     </section>
     
-
 </main>
+<h1>Tipos de Formularios</h1>
+<hr>
+<form>
+    <div>
+        <label for="Texto">Nome:</label>
+        <input type="Text" id="Texto" placeholder="Insira seu nome" name="Nome">
+    </div>
+    <br>
+    <div>
+        <label for="senha">Senha:</label>
+        <input type="Password" name="senha" id="senha" placeholder="Insira sua senha">
+    </div>
+    <br>
+    <div>
+        <label for="emial">E-Mail:</label>
+        <input type="emial" name="emial" id="email" placeholder="Insira seu email">
+    </div>
+    <br>
+    <div>
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" name="data" id="data" placeholder="Data de Nascimento">
+    </div>
+    <br>
+    <div>
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" id="hora" placeholder="Hora">
+    </div>
+    <br>
+    <div>
+        <label for="numero">Numero:</label>
+        <input type="number" name="numero" id="numero" placeholder="numero">
+    </div>
+    <br>
+    <div>
+        <label for="file">Arquivo:</label>
+        <input type="file" name="file" id="file" placeholder="file">
+    </div>
+    <br>
+    <div>
+        <label for="url">Arquivo:</label>
+        <input type="url" name="url" id="url" placeholder="url">
+    </div>
+    <br>
+    <div>
+        <label for="color">Cor:</label>
+        <input type="color" name="color" id="color" placeholder="color">
+    </div>
+    <br>
+    <div>
+        <label for="range">range:</label>
+        <input type="range" name="range" id="range" placeholder="range">
+    </div>
+    <br>
+    <div>
+        <label for="checkbox">Selecione a Caixa:</label>
+        <input type="checkbox" name="checkbox" id="checkbox" placeholder="checkbox">
+    </div>
+    <br>
+    <div>
+        <label for="radio">Selecione a Caixa:</label>
+        <input type="radio" name="radio" id="radio" placeholder="radio">
+    </div>
+    <br>
+    <div>
+        <label for="reset">Limpar:</label>
+        <input type="reset" name="reset" id="reset" placeholder="reset">
+    </div>
+    <br>
+    <div>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <!-- <label for="submit">enviar:</label> -->
+        <input type="submit" name="submit" id="submit" placeholder="submit">
+    </div>
+    <br>
+    <div>
+        <select name="select" id="select">
+            <option value="" disabled selected >Selecione uma das opções</option>
+            <option value="pai">Pai</option>
+            <option value="mae">Mae</option>
+            <option value="irmao">Irmão</option>
+            <option value="irma">Irmã</option>
+        </select>
+    </div>
+    
+    
 
+</form>
+
+
+
+
+
+<hr>
 <footer>
-
-
-
+Desenvolvido por João Wagner
 </footer>
-
-
-
-
 
 </body>
 </html>
